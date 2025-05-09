@@ -1,0 +1,67 @@
+{
+  "version": "0.0.1",
+  "keywords": [],
+  "type": "commonjs",
+  "exports": {
+    "./package.json": "./package.json",
+    "./strapi-admin": {
+      "source": "./admin/src/index.js",
+      "import": "./dist/admin/index.mjs",
+      "require": "./dist/admin/index.js",
+      "default": "./dist/admin/index.js"
+    },
+    "./strapi-server": {
+      "source": "./server/src/index.js",
+      "import": "./dist/server/index.mjs",
+      "require": "./dist/server/index.js",
+      "default": "./dist/server/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "strapi-plugin build",
+    "watch": "strapi-plugin watch",
+    "watch:link": "strapi-plugin watch:link",
+    "verify": "strapi-plugin verify"
+  },
+  "dependencies": {
+    "@radix-ui/react-tooltip": "^1.1.8",
+    "@strapi/admin": "^5.9.0",
+    "@strapi/design-system": "2.0.0-rc.11",
+    "@strapi/helper-plugin": "^4.4.0-rc.1",
+    "@strapi/icons": "2.0.0-rc.16",
+    "formik": "^2.4.6",
+    "qs": "^6.14.0",
+    "react-intl": "^7.1.5",
+    "yup": "^1.6.1"
+  },
+  "devDependencies": {
+    "@strapi/sdk-plugin": "^5.3.0",
+    "@strapi/strapi": "^5.9.0",
+    "prettier": "^3.4.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.29.0",
+    "styled-components": "^6.1.14"
+  },
+  "peerDependencies": {
+    "@strapi/sdk-plugin": "^5.3.0",
+    "@strapi/strapi": "^5.9.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.29.0",
+    "styled-components": "^6.1.14"
+  },
+  "strapi": {
+    "kind": "plugin",
+    "name": "redirects",
+    "displayName": "Redirects",
+    "description": ""
+  },
+  "name": "redirects",
+  "description": "",
+  "license": "MIT",
+  "author": "Edgar <soloviev.ed16@gmail.com>"
+}
