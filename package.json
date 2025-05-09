@@ -1,7 +1,14 @@
 {
+  "name": "@digital-butlers/strapi-redirects",
+  "description": "Library for configuring redirects in cms 'strapi'",
   "version": "0.0.1",
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [],
   "type": "commonjs",
+  "license": "MIT",
+  "author": "Edgar <soloviev.ed16@gmail.com>",
   "exports": {
     "./package.json": "./package.json",
     "./strapi-admin": {
@@ -59,9 +66,5 @@
     "name": "redirects",
     "displayName": "Redirects",
     "description": ""
-  },
-  "name": "redirects",
-  "description": "",
-  "license": "MIT",
-  "author": "Edgar <soloviev.ed16@gmail.com>"
+  }
 }
