@@ -1,7 +1,7 @@
 {
   "name": "@digital-butlers/strapi-redirects",
   "description": "Library for configuring redirects in cms 'strapi'",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publishConfig": {
     "access": "public"
   },
@@ -47,6 +47,7 @@
   "devDependencies": {
     "@strapi/sdk-plugin": "^5.3.0",
     "@strapi/strapi": "^5.6.0",
+    "@types/react": "^18.3.23",
     "prettier": "^3.4.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
